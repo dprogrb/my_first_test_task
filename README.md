@@ -1,6 +1,6 @@
 # XO — крестики-нолики (Defold)
 
-![GamePlay](https://github.com/user-attachments/assets/bdd3d5b3-ac64-4a83-a9cb-9c39e83d287b)
+![ViewGamePlay](https://github.com/user-attachments/assets/3613f904-d5a8-4d2e-afbd-dd7c188c82fb)
 
 Модульная реализация: матч **до двух побед в партиях** (best-of-3), ничья в партии без очков, **чередование первого хода** между партиями. Логика доски и матча — в Lua-модулях без привязки к GUI; сцена интерфейса вызывает только `try_move` / `start_next_round` / `reset_match`.
 
