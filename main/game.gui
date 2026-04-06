@@ -1,0 +1,258 @@
+script: "/main/game.gui_script"
+fonts {
+  name: "system_font"
+  font: "/builtins/fonts/default.font"
+}
+textures {
+  name: "main"
+  texture: "/assets/main.atlas"
+}
+nodes {
+  position {
+    x: 120.0
+    y: 580.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "P1: 0"
+  font: "system_font"
+  id: "hud_p1"
+}
+nodes {
+  position {
+    x: 840.0
+    y: 580.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "P2: 0"
+  font: "system_font"
+  id: "hud_p2"
+}
+nodes {
+  position {
+    x: 480.0
+    y: 580.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "Round 1"
+  font: "system_font"
+  id: "hud_round"
+}
+nodes {
+  position {
+    x: 480.0
+    y: 320.0
+  }
+  size {
+    x: 420.0
+    y: 220.0
+  }
+  color {
+    x: 0.1
+    y: 0.1
+    z: 0.12
+  }
+  type: TYPE_BOX
+  id: "popup_panel"
+  inherit_alpha: true
+  alpha: 0.95
+}
+nodes {
+  position {
+    y: 60.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "Message"
+  font: "system_font"
+  id: "popup_title"
+  parent: "popup_panel"
+}
+nodes {
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "[ Priest ]"
+  font: "system_font"
+  id: "popup_priest"
+  parent: "popup_panel"
+}
+nodes {
+  position {
+    y: -60.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "Tap to continue"
+  font: "system_font"
+  id: "popup_hint"
+  parent: "popup_panel"
+}
+nodes {
+  position {
+    x: 480.0
+    y: 320.0
+  }
+  size {
+    x: 960.0
+    y: 640.0
+  }
+  type: TYPE_BOX
+  id: "box_cell_panel"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  visible: false
+}
+nodes {
+  position {
+    x: -112.0
+    y: 78.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  texture: "main/view_empty"
+  id: "box_cell_7"
+  parent: "box_cell_panel"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -112.0
+    y: -34.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  texture: "main/view_empty"
+  id: "box_cell_4"
+  parent: "box_cell_panel"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -146.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  texture: "main/view_empty"
+  id: "box_cell_2"
+  parent: "box_cell_panel"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 112.0
+    y: -146.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  texture: "main/view_empty"
+  id: "box_cell_3"
+  parent: "box_cell_panel"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 112.0
+    y: 78.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  texture: "main/view_empty"
+  id: "box_cell_9"
+  parent: "box_cell_panel"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: -34.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  texture: "main/view_empty"
+  id: "box_cell_5"
+  parent: "box_cell_panel"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: 78.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  texture: "main/view_empty"
+  id: "box_cell_8"
+  parent: "box_cell_panel"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -112.0
+    y: -146.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  texture: "main/view_empty"
+  id: "box_cell_1"
+  parent: "box_cell_panel"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 112.0
+    y: -34.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  texture: "main/view_empty"
+  id: "box_cell_6"
+  parent: "box_cell_panel"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

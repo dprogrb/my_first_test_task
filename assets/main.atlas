@@ -1,0 +1,22 @@
+animations {
+  id: "view_o"
+  images {
+    image: "/assets/o.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+}
+animations {
+  id: "view_x"
+  images {
+    image: "/assets/x.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+}
+animations {
+  id: "view_empty"
+  images {
+    image: "/assets/w.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+}
+extrude_borders: 2
